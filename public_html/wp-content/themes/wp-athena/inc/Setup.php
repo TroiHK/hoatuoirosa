@@ -26,7 +26,9 @@ add_action( 'wp_enqueue_scripts', 'rosa_scripts' );
 add_action('init','rosa_setup');
 function rosa_setup(){
     register_nav_menus( array(
-        'primary_menu' => __('Main Menu', DOMAIN)
+        'primary_menu' => __('Main Menu', DOMAIN),
+        'footer_menu' => __('Footer Menu', DOMAIN),
+        'info_menu' => __('Thông Tin Thêm', DOMAIN)
     ) );
     add_theme_support( 'post-thumbnails' );
     add_post_type_support( 'page', 'excerpt' );
