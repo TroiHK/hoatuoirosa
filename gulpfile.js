@@ -115,7 +115,8 @@ if (config.generateCss.enable) {
             }
         }
     );
-    default_tasks.push('check-scss', 'css');
+    // default_tasks.push('check-scss', 'css');
+	default_tasks.push('css');
     config.generateCss.src_path = '/gulp-includes/scss/';
 }
 

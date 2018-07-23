@@ -16,5 +16,25 @@
 				</div>
 			</div>
 		</div>
+		<div class="slider-default w-50">
+			<div class="item">
+				<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/slider1.png" alt="">
+			</div>
+			<div class="item">
+				<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/slider1.png" alt="">
+			</div>
+			<div class="item">
+				<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/slider1.png" alt="">
+			</div>
+			<div class="item">
+				<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/slider1.png" alt="">
+			</div>
+			<div class="item">
+				<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/slider1.png" alt="">
+			</div>
+			<div class="item">
+				<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/slider1.png" alt="">
+			</div>
+		</div>
 	</div>
 </section>

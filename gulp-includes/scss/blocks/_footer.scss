@@ -22,4 +22,24 @@
 			}
 		}
 	}
+
+	.ft-menu {
+		font-family: $content-font;
+		font-size: 18px;
+
+		h4 {
+			font-size: 18px;
+			color: $white;
+			margin-bottom: 10px;
+		}
+
+		li {
+			color: $pink;
+			margin-bottom: 10px;
+		}
+
+		a {
+			color: $pink;
+		}
+	}
 }

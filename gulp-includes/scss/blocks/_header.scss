@@ -1,0 +1,48 @@
+#header {
+	.container {
+		position: relative;
+	}
+
+	.hotline {
+		position: absolute;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		color: $red;
+		width: 250px;
+		text-align: center;
+		font-family: $quote-font;
+
+		label {
+			display: block;
+			font-size: 18px;
+			margin-bottom: 0;
+			z-index: 1;
+			margin-top: 10px;
+			position: relative;
+		}
+
+		a {
+			position: relative;
+			display: block;
+			color: $red;
+			font-size: 24px;
+			z-index: 1;
+		}
+
+		.left {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 65px;
+		}
+
+		.right {
+			transform: rotateY(180deg);
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 65px;
+		}
+	}
+}

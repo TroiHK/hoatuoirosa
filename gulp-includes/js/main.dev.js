@@ -11,6 +11,20 @@ var rosa = (function ($, window, undefined) {
     /*-----------------------------------------------------*/
 
     function _slickSlider() {
+	    $('.slider-default').slick({
+		    infinite: true,
+		    slidesToShow: 1,
+		    slidesToScroll: 1,
+		    focusOnSelect: true,
+		    arrows: false,
+		    rows: 0,
+            dots: true,
+            fade: true,
+		    speed: 2000,
+		    prevArrow:"<button type='button' class='slick-prev'><i class='mo-arrow-left' aria-hidden='true'></i></button>",
+		    nextArrow:"<button type='button' class='slick-next'><i class='mo-arrow-right' aria-hidden='true'></i></button>"
+	    });
+
         $('.slider-product').slick({
             infinite: true,
             slidesToShow: 4,

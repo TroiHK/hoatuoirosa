@@ -19,7 +19,7 @@
 					<?php get_template_part('template-parts/footer/footer','copyright') ?>
 				</div>
 
-				<div class="col-md-3">
+				<div class="col-md-3 ft-menu">
 					<h4><?= __('THÔNG TIN THÊM', DOMAIN) ?></h4>
 					<?php
 					wp_nav_menu([
@@ -32,7 +32,7 @@
 					?>
 				</div>
 
-				<div class="col-md-3">
+				<div class="col-md-3 ft-menu">
 					<h4><?= __('THỐNG KÊ TRUY CẬP', DOMAIN) ?></h4>
 					<div class="connect-view">
 						<ul>
@@ -45,7 +45,7 @@
 					</div>
 				</div>
 
-				<div class="col-md-3">
+				<div class="col-md-3 ft-menu">
 					<h4>FANPAGE</h4>
 					<div class="code-fanpage">
 					</div>

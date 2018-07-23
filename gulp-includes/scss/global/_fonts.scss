@@ -8,3 +8,72 @@
 	font-weight: normal;
 	font-style: normal;
 }
+
+@font-face {
+	font-family: 'HelveticaNeue';
+	src: url('../fonts/HelveticaNeue.eot');
+	src: url('../fonts/HelveticaNeue.woff2') format('woff2'),
+	url('../fonts/HelveticaNeue.eot?#iefix') format('embedded-opentype');
+	src: url('../fonts/HelveticaNeue.woff') format('woff'),
+	url('../fonts/HelveticaNeue.ttf') format('truetype'),
+	url('../fonts/HelveticaNeue.svg#HelveticaNeue') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'UTMNeutra';
+	src: url('../fonts/UTMNeutra.eot');
+	src: url('../fonts/UTMNeutra.woff2') format('woff2'),
+	url('../fonts/UTMNeutra.woff') format('woff'),
+	url('../fonts/UTMNeutra.ttf') format('truetype'),
+	url('../fonts/UTMNeutra.svg#UTMNeutra') format('svg'),
+	url('../fonts/UTMNeutra.eot?#iefix') format('embedded-opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'rosa';
+	src:  url('../fonts/rosa.eot?94r2dr');
+	src:  url('../fonts/rosa.eot?94r2dr#iefix') format('embedded-opentype'),
+	url('../fonts/rosa.ttf?94r2dr') format('truetype'),
+	url('../fonts/rosa.woff?94r2dr') format('woff'),
+	url('../fonts/rosa.svg?94r2dr#rosa') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="rosa-"], [class*=" rosa-"] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'rosa' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.rosa-arrow-down:before {
+	content: "\e900";
+}
+.rosa-email:before {
+	content: "\e901";
+}
+.rosa-facebook:before {
+	content: "\e902";
+}
+.rosa-google-plus:before {
+	content: "\e903";
+}
+.rosa-search:before {
+	content: "\e904";
+}
+.rosa-youtube-play:before {
+	content: "\e905";
+}

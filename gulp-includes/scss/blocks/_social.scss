@@ -1,0 +1,20 @@
+.block-social {
+	ul {
+		margin-bottom: 0;
+
+		li {
+			a {
+				display: flex;
+				@include size(35px, 35px);
+				background-color: $white;
+				border-radius: 50%;
+				align-items: center;
+				justify-content: center;
+
+				i {
+					color: #667a9d;
+				}
+			}
+		}
+	}
+}
