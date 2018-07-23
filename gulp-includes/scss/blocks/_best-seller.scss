@@ -1,0 +1,54 @@
+.block-bestseller {
+	padding: 30px 0;
+	background-size: cover;
+
+	.price {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		color: $white;
+		background-color: $pink;
+		padding: 5px;
+		margin: 0;
+		border-bottom-right-radius: 20px;
+	}
+
+	.bg {
+		position: absolute;
+		right: -28px;
+		bottom: 0;
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	.slick-active {
+		.bg {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+
+	.item {
+		position: relative;
+		border: 2px solid $white;
+		border-radius: 20px;
+		background-color: $white;
+		box-shadow: 0px -2px 10px 3px rgba($pink,.27), 0px 8px 8px -6px rgba($black,.92);
+		margin-top: 15px;
+		margin-bottom: 15px;
+
+		.thumb {
+			overflow: hidden;
+			border-top-left-radius: 20px;
+			border-top-right-radius: 20px;
+		}
+
+		.content {
+			padding: 15px;
+
+			p {
+				margin-bottom: 0;
+			}
+		}
+	}
+}

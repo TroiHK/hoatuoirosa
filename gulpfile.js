@@ -161,14 +161,24 @@ gulp.task('watch', default_tasks, function () {
     setTimeout(function () {
         notifyCompilationEnded();
         if (config.generateHtml.enable && argv.dev) {
-            browserSync.init(
-                {
-                    server: true,
-                    startPath: upath.join(rls(config.generateHtml.output), 'index.html'),
-                    ui: false,
-                    notify: false
-                }
-            );
+            if (argv.wp) {
+                browserSync.init(
+                    {
+                        proxy: config.project_host,
+                        ui: false,
+                        notify: false
+                    }
+                );
+            } else {
+                browserSync.init(
+                    {
+                        server: true,
+                        startPath: upath.join(rls(config.generateHtml.output), 'index.html'),
+                        ui: false,
+                        notify: false
+                    }
+                );
+            }
         }
         var tasks_to_run = [];
         var watcher = gulp.watch(['./gulpfile.js', './package.json', './gulp-includes/gulp-configuration.js']);

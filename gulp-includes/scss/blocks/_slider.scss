@@ -1,0 +1,42 @@
+.block-slider {
+
+	.thumb {
+		height: 640px;
+		padding: 60px 0 24px;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	.content {
+		color: $white;
+
+		&-top {
+			font-size: 23px;
+
+			.title {
+				font-size: 45px;
+				text-shadow: 1px 1px 1px $black;
+			}
+
+			p {
+				line-height: 48px;
+				text-shadow: 1px 1px 1px $black;
+			}
+		}
+
+		&-bottom {
+			font-size: 22px;
+
+			a {
+				color: $white;
+			}
+		}
+	}
+
+	.block-info {
+		.tel {
+			font-size: 28px;
+			color: $white;
+		}
+	}
+}

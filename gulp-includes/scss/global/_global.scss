@@ -1,7 +1,58 @@
 body {
-   font-family: $font-1; //Default font family
+   font-family: $main-font; //Default font family
    color: $textcolor-1; //Default text color
    letter-spacing: normal; //Default letter spacing
    font-size: 16px; //Default font size
    line-height: 1.15; //Default line height
  }
+
+a {
+   &:hover {
+      text-decoration: none;
+      color: inherit;
+   }
+}
+
+.btn {
+   &-more {
+      font-size: 30px;
+      border: 3px solid $pink;
+      color: $pink;
+      padding: 4px 15px;
+
+      &:hover {
+         color: $pink;
+      }
+   }
+}
+
+.block {
+   header {
+      .block-title {
+         span {
+            position: relative;
+            font-size: 46px;
+            color: $pink;
+            border: 5px solid $pink;
+            padding: 2px 38px;
+            background-color: $white;
+            display: inline-block;
+
+            @include media-breakpoint-up(xl) {
+               min-width: 402px;
+            }
+         }
+      }
+
+      .line {
+         display: block;
+         margin: 15px auto 30px;
+      }
+
+      .leaf {
+         position: absolute;
+         right: -50px;
+         top: -15px;
+      }
+   }
+}

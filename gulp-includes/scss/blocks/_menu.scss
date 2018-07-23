@@ -1,0 +1,12 @@
+.navbar-nav {
+	.nav-item {
+		+ .nav-item {
+			margin-left: 20px;
+		}
+	}
+
+	.nav-link {
+		font-size: 30px;
+		color: $pink;
+	}
+}

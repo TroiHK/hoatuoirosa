@@ -19,13 +19,16 @@
 @import 'global/normalize';
 
 //slick.scss
-//@import '../../node_modules/slick-carousel/slick/slick.scss';
+@import '../../node_modules/slick-carousel/slick/slick.scss';
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
 
 //magnific-popup.css
 //@import '../../node_modules/magnific-popup/dist/magnific-popup';
 
 @import 'global/layout';
 @import 'global/global';
+@import 'global/fonts';
 
 @import 'blocks/**/*.scss';
 @import 'templates/**/*.scss';

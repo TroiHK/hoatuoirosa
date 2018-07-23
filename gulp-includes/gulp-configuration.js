@@ -27,6 +27,7 @@ const config = {
 
     /* This is important for favicon generation */
     project_name: "Hoa Tươi Rosa",
+    project_host: "http://hoatuoirosa.me",
 
     /* This is important for favicon generation */
     /* Simply fill in your app's default language code. Please respect the syntax. */
@@ -56,6 +57,9 @@ const config = {
         src: [
             // 'node_modules/slick-carousel/slick/slick.js',
             // '/node_modules/magnific-popup/dist/jquery.magnific-popup.js'
+            './node_modules/bootstrap/dist/js/bootstrap.js',
+            './node_modules/select2/dist/js/select2.js',
+            './node_modules/slick-carousel/slick/slick.js',
         ],
 
         /* Modernizr will be included in the bundle if feature-detects is filled. */

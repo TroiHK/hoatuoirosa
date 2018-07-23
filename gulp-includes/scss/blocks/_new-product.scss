@@ -1,0 +1,34 @@
+.block-newproduct {
+	background-color: $pink;
+	padding: 15px 0;
+
+	.item {
+		border: 3px solid $white;
+		position: relative;
+	}
+
+	.price {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		color: $white;
+		background-color: $pink;
+		padding: 5px;
+		margin: 0;
+	}
+
+	.bg {
+		position: absolute;
+		right: -28px;
+		bottom: 0;
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	.slick-active {
+		.bg {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+}

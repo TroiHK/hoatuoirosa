@@ -36,11 +36,12 @@
     <meta name="application-name" content="<?= get_bloginfo( 'name' ) ?>">
     <!-- end favicon -->
 	<?php wp_head(); ?>
+	<script type="text/javascript">var gulp_timer = Date.now();</script>
 
 </head>
 <body <?php body_class(); ?>>
 <header id="header" class="header">
-    <div class="wrapper clearfix">
+    <div class="container">
         <?php get_template_part('template-parts/header/header','logo') ?>
         <?php get_template_part('template-parts/header/header','menu') ?>
         <?php get_template_part('template-parts/header/header','hotline') ?>
