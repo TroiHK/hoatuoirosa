@@ -42,4 +42,37 @@
 			color: $pink;
 		}
 	}
+
+	.block-info {
+		color: $white;
+		margin-bottom: 20px;
+
+		p {
+			margin-bottom: 0;
+		}
+
+		a {
+			color: $white;
+
+			&.tel {
+				color: $pink;
+				font-size: 24px;
+			}
+		}
+	}
+
+	.copyright {
+		color: $white;
+		font-family: $content-font;
+		font-size: 14px;
+		margin-top: 7px;
+
+		p {
+			margin-bottom: 0;
+		}
+
+		a {
+			color: inherit;
+		}
+	}
 }

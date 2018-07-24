@@ -1,4 +1,27 @@
 .block-searchform {
+	position: relative;
+	margin-bottom: -50px;
+	padding-top: 20px;
+	z-index: 1;
+
 	form {
+		display: inline-block;
+		font-family: $content-font;
+		background-color: $white;
+		border-radius: 8px;
+		padding: 7px;
+		font-size: 15px;
+		color: $pink;
+		max-width: 160px;
+		margin-right: 30px;
+
+		input {
+			color: $pink;
+			width: calc(100% - 20px);
+		}
+
+		i {
+			color: $pink;
+		}
 	}
 }
