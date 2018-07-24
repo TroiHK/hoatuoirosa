@@ -1,5 +1,5 @@
 body {
-   font-family: $main-font; //Default font family
+   font-family: $content-font; //Default font family
    color: $textcolor-1; //Default text color
    letter-spacing: normal; //Default letter spacing
    font-size: 16px; //Default font size
@@ -31,6 +31,7 @@ a {
       .block-title {
          span {
             position: relative;
+            font-family: $main-font;
             font-size: 46px;
             color: $pink;
             border: 5px solid $pink;

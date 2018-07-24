@@ -12,9 +12,47 @@
 		right: 0;
 		bottom: 0;
 		color: $white;
-		background-color: $pink;
+		background-color: $pink-bolder;
 		padding: 5px;
 		margin: 0;
+		font-size: 16px;
+
+		&:before {
+			position: absolute;
+			left: -19px;
+			top: 0;
+			content: "";
+			@include size(19px, 100%);
+			background: url("../images/bg-price.png") top right/ auto 100% no-repeat;
+		}
+
+		span {
+			margin-right: 10px;
+			color: $black;
+			position: relative;
+
+			&:before {
+				position: absolute;
+				content: "";
+				@include size(1px, 60px);
+				background-color: $white;
+				transform: rotate(73deg);
+				top: 0;
+				right: 0;
+				transform-origin: top;
+			}
+
+			&:after {
+				position: absolute;
+				content: "";
+				@include size(1px, 60px);
+				background-color: rgba($white, 0.7);
+				transform: rotate(-73deg);
+				top: 0;
+				left: 0;
+				transform-origin: top;
+			}
+		}
 	}
 
 	.bg {

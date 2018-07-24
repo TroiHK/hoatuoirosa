@@ -9,28 +9,28 @@
 					<div class="col-md-4">
 						<div class="item">
 							<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/img2.jpg" alt="">
-							<p class="price">200.000</p>
+							<p class="price"><span>200.000</span>150.000</p>
 							<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/bg-flower.png" class="bg" alt="">
 						</div>
 					</div>
 					<div class="col-md-4">
 						<div class="item">
 							<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/img3.jpg" alt="">
-							<p class="price">200.000</p>
+							<p class="price"><span>200.000</span>150.000</p>
 							<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/bg-flower.png" class="bg" alt="">
 						</div>
 					</div>
 					<div class="col-md-4">
 						<div class="item">
 							<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/img4.jpg" alt="">
-							<p class="price">200.000</p>
+							<p class="price"><span>200.000</span>150.000</p>
 							<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/bg-flower.png" class="bg" alt="">
 						</div>
 					</div>
 					<div class="col-md-4">
 						<div class="item">
 							<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/img1.jpg" alt="">
-							<p class="price">200.000</p>
+							<p class="price"><span>200.000</span>150.000</p>
 							<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/bg-flower.png" class="bg" alt="">
 						</div>
 					</div>

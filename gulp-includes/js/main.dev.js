@@ -21,8 +21,8 @@ var rosa = (function ($, window, undefined) {
             dots: true,
             fade: true,
 		    speed: 2000,
-		    prevArrow:"<button type='button' class='slick-prev'><i class='mo-arrow-left' aria-hidden='true'></i></button>",
-		    nextArrow:"<button type='button' class='slick-next'><i class='mo-arrow-right' aria-hidden='true'></i></button>"
+		    prevArrow:"<button type='button' class='slick-prev'></button>",
+		    nextArrow:"<button type='button' class='slick-next'></button>"
 	    });
 
         $('.slider-product').slick({
@@ -32,8 +32,8 @@ var rosa = (function ($, window, undefined) {
             focusOnSelect: true,
             arrows: true,
             rows: 0,
-            prevArrow:"<button type='button' class='slick-prev'><i class='mo-arrow-left' aria-hidden='true'></i></button>",
-            nextArrow:"<button type='button' class='slick-next'><i class='mo-arrow-right' aria-hidden='true'></i></button>"
+            prevArrow:"<button type='button' class='slick-prev'></button>",
+            nextArrow:"<button type='button' class='slick-next'></button>"
         });
 
         $('.slider-promotion').slick({
@@ -43,8 +43,8 @@ var rosa = (function ($, window, undefined) {
             focusOnSelect: true,
             arrows: true,
             rows: 0,
-            prevArrow:"<button type='button' class='slick-prev'><i class='mo-arrow-left' aria-hidden='true'></i></button>",
-            nextArrow:"<button type='button' class='slick-next'><i class='mo-arrow-right' aria-hidden='true'></i></button>"
+            prevArrow:"<button type='button' class='slick-prev'></button>",
+            nextArrow:"<button type='button' class='slick-next'></button>"
         });
 
         $('.slider-bestseller').slick({
@@ -54,15 +54,26 @@ var rosa = (function ($, window, undefined) {
             focusOnSelect: true,
             arrows: true,
             rows: 0,
-            prevArrow:"<button type='button' class='slick-prev'><i class='mo-arrow-left' aria-hidden='true'></i></button>",
-            nextArrow:"<button type='button' class='slick-next'><i class='mo-arrow-right' aria-hidden='true'></i></button>"
+            prevArrow:"<button type='button' class='slick-prev'></button>",
+            nextArrow:"<button type='button' class='slick-next'></button>"
         });
     }
 
+	/*-----------------------------------------------------*/
+	/*------------------  Slick slider  -------------------*/
+	/*-----------------------------------------------------*/
+	
+	function _initSelect2() {
+		var $select = $('select');
+		$select.each(function () {
+			$(this).select2();
+		})
+	}
 
     return {
         init: function () {
             _slickSlider();
+            _initSelect2();
         }
     };
 

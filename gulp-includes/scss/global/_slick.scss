@@ -1,0 +1,21 @@
+.slick {
+	&-arrow {
+		@include size(14px, 56px);
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 1;
+		outline: none;
+		border: none;
+
+		&.slick-prev {
+			background: url("../images/arrow-left.png") rgba($white, 0.84) center center no-repeat;
+			left: 25px;
+		}
+
+		&.slick-next {
+			background: url("../images/arrow-right.png") rgba($white, 0.84) center center no-repeat;
+			right: 25px;
+		}
+	}
+}

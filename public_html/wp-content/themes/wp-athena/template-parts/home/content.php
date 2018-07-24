@@ -1,5 +1,30 @@
 <section class="block block-content" style="background: url('<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/bg-content.jpg')">
 	<div class="container">
+		<div class="row">
+			<div class="col-md-10 offset-md-1">
+				<div class="block-filter d-flex align-items-center">
+					<div class="form-group">
+						<label>Chọn chủ đề</label>
+						<select>
+							<option selected>Tất cả</option>
+							<option value="1">One</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label>Chọn chủ đề</label>
+						<select>
+							<option selected>Tất cả</option>
+							<option value="1">One</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<header class="header text-center">
 			<p class="block-title"><span>HOA TƯƠI THEO MÙA<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/bg-leaf.png" class="leaf" alt=""></span></p>
 			<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/line.png" class="line" alt="">

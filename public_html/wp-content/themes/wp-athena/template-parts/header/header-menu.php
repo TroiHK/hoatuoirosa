@@ -23,30 +23,31 @@
 			</button>
 			<div class="collapse navbar-collapse" id="navbars">
 				<ul class="navbar-nav">
-					<li class="nav-item current-menu-item menu-item-has-children">
+					<li class="nav-item current-menu-item">
 						<a class="nav-link" href="#">TRANG CHỦ</a>
-						<span class="dropdown-toggle d-lg-none" id="sub1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></span>
-						<div class="dropdown-menu" aria-labelledby="sub1">
-							<div class="container">
-								<div class="row">
-									<div class="col-lg-3">
-										<ul class="sub-menu">
-											<li class="menu-item"><a href="#">Rechercher un bien immobilier</a></li>
-											<li class="menu-item"><a href="#">Programmes immobiliers TVA réduite</a></li>
-											<li class="menu-item"><a href="#">Programmes immobiliers neuf</a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
 					</li>
-					<li class="nav-item menu-item-has-children">
+					<li class="nav-item">
 						<a class="nav-link" href="#">MẪU HOA MỚI</a>
 					</li>
 					<li class="nav-item menu-item-has-children">
 						<a class="nav-link" href="#">CHỦ ĐỀ</a>
+						<span class="dropdown-toggle d-lg-none" id="sub1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></span>
+						<div class="dropdown-menu rounded-0" aria-labelledby="sub1">
+							<ul class="sub-menu">
+								<li class="menu-item"><a href="#">Hoa cưới</a></li>
+								<li class="menu-item"><a href="#">Hoa sinh nhật</a></li>
+								<li class="menu-item"><a href="#">Hoa khai trương</a></li>
+								<li class="menu-item"><a href="#">Hoa tang lễ</a></li>
+								<li class="menu-item"><a href="#">Hoa giỏ</a></li>
+								<li class="menu-item"><a href="#">Hoa tặng mẹ</a></li>
+								<li class="menu-item"><a href="#">Hoa ngày lễ</a></li>
+								<li class="menu-item"><a href="#">Hoa giáng sinh</a></li>
+								<li class="menu-item"><a href="#">Hoa mừng tốt nghiệp</a></li>
+								<li class="menu-item"><a href="#">Hoa chúc sức khỏe</a></li>
+							</ul>
+						</div>
 					</li>
-					<li class="nav-item menu-item-has-children">
+					<li class="nav-item">
 						<a class="nav-link" href="#">LIÊN HỆ</a>
 					</li>
 				</ul>
