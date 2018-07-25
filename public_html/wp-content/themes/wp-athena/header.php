@@ -40,9 +40,12 @@
 
 </head>
 <body <?php body_class(); ?>>
+<?php 
+    global $facebookCode;
+    get_template_part('template-parts/blocks/block','facebook-page'); 
+?>
 <header id="header" class="header">
     <div class="container">
-        <?php get_template_part('template-parts/header/header','logo') ?>
         <?php get_template_part('template-parts/header/header','menu') ?>
         <?php get_template_part('template-parts/header/header','hotline') ?>
     </div>

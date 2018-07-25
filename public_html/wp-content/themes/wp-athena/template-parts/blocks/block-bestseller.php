@@ -6,7 +6,7 @@
 		</header>
 
 		<div class="row slider-product">
-			<div class="col-md-3">
+			<div class="col-12 col-sm-6 col-md-3">
 				<div class="item">
 					<div class="thumb">
 						<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/img5.jpg" alt="">
@@ -20,7 +20,7 @@
 					<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/bg-flower-pink.png" class="bg" alt="">
 				</div>
 			</div>
-			<div class="col-md-3">
+			<div class="col-12 col-sm-6 col-md-3">
 				<div class="item">
 					<div class="thumb">
 						<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/img6.jpg" alt="">
@@ -34,7 +34,7 @@
 					<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/bg-flower-pink.png" class="bg" alt="">
 				</div>
 			</div>
-			<div class="col-md-3">
+			<div class="col-12 col-sm-6 col-md-3">
 				<div class="item">
 					<div class="thumb">
 						<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/img7.jpg" alt="">
@@ -48,7 +48,7 @@
 					<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/bg-flower-pink.png" class="bg" alt="">
 				</div>
 			</div>
-			<div class="col-md-3">
+			<div class="col-12 col-sm-6 col-md-3">
 				<div class="item">
 					<div class="thumb">
 						<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/img8.jpg" alt="">
@@ -62,7 +62,7 @@
 					<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/bg-flower-pink.png" class="bg" alt="">
 				</div>
 			</div>
-			<div class="col-md-3">
+			<div class="col-12 col-sm-6 col-md-3">
 				<div class="item">
 					<div class="thumb">
 						<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/img5.jpg" alt="">
