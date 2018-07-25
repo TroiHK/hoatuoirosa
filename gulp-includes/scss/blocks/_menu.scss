@@ -1,4 +1,8 @@
 .navbar-nav {
+	@include media-breakpoint-up(lg) {
+		margin-top: 40px;
+	}
+
 	> .nav-item {
 		> a {
 			font-family: $main-font;

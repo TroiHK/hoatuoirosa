@@ -1,4 +1,4 @@
 <?php
-	$header['logo'] = get_field(ROSA_LOGO,'option');
+	$footer['logo'] = get_field(ROSA_LOGO_FOOTER,'option');
 ?>
-<a class="logo" href="<?= site_url() ?>"><img src="<?= $header['logo'] ?>" alt="Logo"></a>
+<a class="logo" href="<?= site_url() ?>"><img src="<?= $footer['logo'] ?>" alt="Logo"></a>

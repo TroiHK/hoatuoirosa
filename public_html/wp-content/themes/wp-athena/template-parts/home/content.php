@@ -2,25 +2,38 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-10 offset-md-1">
-				<div class="block-filter d-flex align-items-center">
-					<div class="form-group">
-						<label>Chọn chủ đề</label>
-						<select>
-							<option selected>Tất cả</option>
-							<option value="1">One</option>
-							<option value="2">Two</option>
-							<option value="3">Three</option>
-						</select>
-					</div>
-					<div class="form-group">
-						<label>Chọn chủ đề</label>
-						<select>
-							<option selected>Tất cả</option>
-							<option value="1">One</option>
-							<option value="2">Two</option>
-							<option value="3">Three</option>
-						</select>
-					</div>
+				<div class="block-filter">
+					<form action="" class="d-flex align-items-center">
+						<div class="form-group">
+							<label>Chọn chủ đề</label>
+							<select>
+								<option selected>Tất cả</option>
+								<option value="Dưới 250.000đ">Dưới 250.000đ</option>
+								<option value="Giá từ 250.000đ - 350.000đ">Giá từ 250.000đ - 350.000đ</option>
+								<option value="Giá từ 350.000đ - 400.000đ">Giá từ 350.000đ - 400.000đ</option>
+								<option value="Giá từ 500.000đ - 600.000đ">Giá từ 500.000đ - 600.000đ</option>
+								<option value="Giá từ 600.000đ - 800.000đ">Giá từ 600.000đ - 800.000đ</option>
+								<option value="Giá từ 800.000đ - 1.000.000đ">Giá từ 800.000đ - 1.000.000đ</option>
+								<option value="Giá trên 1.000.000đ">Giá trên 1.000.000đ</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label>Chọn chủ đề</label>
+							<select>
+								<option selected>Tất cả</option>
+								<option value="Dưới 250.000đ">Dưới 250.000đ</option>
+								<option value="Giá từ 250.000đ - 350.000đ">Giá từ 250.000đ - 350.000đ</option>
+								<option value="Giá từ 350.000đ - 400.000đ">Giá từ 350.000đ - 400.000đ</option>
+								<option value="Giá từ 500.000đ - 600.000đ">Giá từ 500.000đ - 600.000đ</option>
+								<option value="Giá từ 600.000đ - 800.000đ">Giá từ 600.000đ - 800.000đ</option>
+								<option value="Giá từ 800.000đ - 1.000.000đ">Giá từ 800.000đ - 1.000.000đ</option>
+								<option value="Giá trên 1.000.000đ">Giá trên 1.000.000đ</option>
+							</select>
+						</div>
+						<div class="form-group ml-auto">
+							<input type="submit" value="Tìm kiếm">
+						</div>
+					</form>
 				</div>
 			</div>
 		</div>

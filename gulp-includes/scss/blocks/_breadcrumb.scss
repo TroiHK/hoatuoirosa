@@ -1,0 +1,38 @@
+.block-breadcrumb {
+	font-family: $main-font;
+	font-size: 30px;
+	padding: 10px 0;
+
+	ul {
+		li {
+			display: inline-block;
+			position: relative;
+
+			+ li {
+				padding-left: 20px;
+
+				&:before {
+					position: absolute;
+					content: '';
+					@include size(2px, 24px);
+					background-color: $pink;
+					transform: rotate(16deg);
+					top: 7px;
+					left: 5px;
+				}
+			}
+
+			&:last-child {
+				a,
+				span {
+					color: $pink;
+				}
+			}
+
+			a,
+			span {
+				color: #66749d;
+			}
+		}
+	}
+}

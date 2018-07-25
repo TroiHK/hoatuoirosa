@@ -11,6 +11,12 @@
 				align-items: center;
 				justify-content: center;
 
+				&:hover {
+					i {
+						color: $pink;
+					}
+				}
+
 				i {
 					color: #667a9d;
 				}

@@ -27,36 +27,57 @@ var rosa = (function ($, window, undefined) {
 
         $('.slider-product').slick({
             infinite: true,
-            slidesToShow: 4,
-            slidesToScroll: 4,
             focusOnSelect: true,
             arrows: true,
+            variableWidth: true,
             rows: 0,
             prevArrow:"<button type='button' class='slick-prev'></button>",
             nextArrow:"<button type='button' class='slick-next'></button>"
         });
 
-        $('.slider-promotion').slick({
-            infinite: true,
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            focusOnSelect: true,
-            arrows: true,
-            rows: 0,
-            prevArrow:"<button type='button' class='slick-prev'></button>",
-            nextArrow:"<button type='button' class='slick-next'></button>"
-        });
+        // $('.slider-promotion').slick({
+        //     infinite: true,
+        //     slidesToShow: 3,
+        //     slidesToScroll: 3,
+        //     focusOnSelect: true,
+        //     arrows: true,
+        //     rows: 0,
+        //     prevArrow:"<button type='button' class='slick-prev'></button>",
+        //     nextArrow:"<button type='button' class='slick-next'></button>"
+        // });
+        //
+        // $('.slider-bestseller').slick({
+        //     infinite: true,
+        //     slidesToShow: 4,
+        //     slidesToScroll: 4,
+        //     focusOnSelect: true,
+        //     arrows: true,
+        //     rows: 0,
+        //     prevArrow:"<button type='button' class='slick-prev'></button>",
+        //     nextArrow:"<button type='button' class='slick-next'></button>"
+        // });
+        //
+        // $('.slider-list-product').slick({
+        //     infinite: true,
+        //     slidesToShow: 3,
+        //     slidesToScroll: 3,
+        //     focusOnSelect: true,
+        //     arrows: true,
+        //     rows: 0,
+        //     prevArrow:"<button type='button' class='slick-prev'></button>",
+        //     nextArrow:"<button type='button' class='slick-next'></button>"
+        // });
+        //
+        // $('.slider-relate-product').slick({
+        //     infinite: true,
+        //     focusOnSelect: true,
+        //     arrows: true,
+        //     variableWidth: true,
+        //     rows: 0,
+        //     prevArrow:"<button type='button' class='slick-prev'></button>",
+        //     nextArrow:"<button type='button' class='slick-next'></button>"
+        // });
 
-        $('.slider-bestseller').slick({
-            infinite: true,
-            slidesToShow: 4,
-            slidesToScroll: 4,
-            focusOnSelect: true,
-            arrows: true,
-            rows: 0,
-            prevArrow:"<button type='button' class='slick-prev'></button>",
-            nextArrow:"<button type='button' class='slick-next'></button>"
-        });
     }
 
 	/*-----------------------------------------------------*/

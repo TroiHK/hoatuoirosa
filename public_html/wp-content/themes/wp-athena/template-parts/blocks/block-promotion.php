@@ -5,7 +5,7 @@
 				<p class="block-title">khuyến mãi khủng</p>
 			</div>
 			<div class="col-md-9">
-				<div class="row slider-promotion">
+				<div class="row slider-product">
 					<div class="col-md-4">
 						<div class="item">
 							<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/img2.jpg" alt="">

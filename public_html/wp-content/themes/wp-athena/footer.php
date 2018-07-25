@@ -46,9 +46,7 @@
 				</div>
 
 				<div class="col-md-2 ft-menu">
-					<h4>FANPAGE</h4>
-					<div class="code-fanpage">
-					</div>
+					<?php get_template_part('template-parts/blocks/block','facebook-code') ?>
 				</div>
 			</div>
 		</div>
