@@ -34,16 +34,16 @@
 						<span class="dropdown-toggle d-lg-none" id="sub1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></span>
 						<div class="dropdown-menu rounded-0" aria-labelledby="sub1">
 							<ul class="sub-menu">
-								<li class="menu-item"><a href="#">Hoa cưới</a></li>
-								<li class="menu-item"><a href="#">Hoa sinh nhật</a></li>
-								<li class="menu-item"><a href="#">Hoa khai trương</a></li>
-								<li class="menu-item"><a href="#">Hoa tang lễ</a></li>
-								<li class="menu-item"><a href="#">Hoa giỏ</a></li>
-								<li class="menu-item"><a href="#">Hoa tặng mẹ</a></li>
-								<li class="menu-item"><a href="#">Hoa ngày lễ</a></li>
-								<li class="menu-item"><a href="#">Hoa giáng sinh</a></li>
-								<li class="menu-item"><a href="#">Hoa mừng tốt nghiệp</a></li>
-								<li class="menu-item"><a href="#">Hoa chúc sức khỏe</a></li>
+								<li class="menu-item"><a href="#" title="">Hoa cưới</a></li>
+								<li class="menu-item"><a href="#" title="">Hoa sinh nhật</a></li>
+								<li class="menu-item"><a href="#" title="">Hoa khai trương</a></li>
+								<li class="menu-item"><a href="#" title="">Hoa tang lễ</a></li>
+								<li class="menu-item"><a href="#" title="">Hoa giỏ</a></li>
+								<li class="menu-item"><a href="#" title="">Hoa tặng mẹ</a></li>
+								<li class="menu-item"><a href="#" title="">Hoa ngày lễ</a></li>
+								<li class="menu-item"><a href="#" title="">Hoa giáng sinh</a></li>
+								<li class="menu-item"><a href="#" title="">Hoa mừng tốt nghiệp</a></li>
+								<li class="menu-item"><a href="#" title="">Hoa chúc sức khỏe</a></li>
 							</ul>
 						</div>
 					</li>

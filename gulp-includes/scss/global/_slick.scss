@@ -1,3 +1,11 @@
+.slider-product {
+	.slick-track {
+		display: flex;
+		flex-flow: row;
+		width: 100%!important;
+	}
+}
+
 .slick {
 	&-arrow {
 		@include size(14px, 56px);

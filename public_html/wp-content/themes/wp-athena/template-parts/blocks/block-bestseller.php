@@ -5,7 +5,7 @@
 			<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/line.png" class="line" alt="">
 		</header>
 
-		<div class="row slider-bestseller">
+		<div class="row slider-product">
 			<div class="col-md-3">
 				<div class="item">
 					<div class="thumb">
