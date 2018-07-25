@@ -22,5 +22,7 @@
 		        'walker'            => new MainMenuWalker()
 		    ]);
 		?>
+
+		<?php get_template_part('template-parts/header/header','hotline') ?>
 	</div>
 </nav>

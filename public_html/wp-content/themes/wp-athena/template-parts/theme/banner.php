@@ -6,7 +6,6 @@
 					<div class="content-top">
 						<h1 class="title">DỊCH VỤ HOA SINH NHẬT</h1>
 						<p>HoaTUOIROSA.com luôn cam kết đặt chất lượng hoa luôn tươi mới lên hàng đầu giao cho khách. Các mẫu hoa luôn được cắm đủ số lượng và giống kiểu dáng trên website nhất có thể.</p>
-						<a href="#" class="btn-more" title="">CHI TIẾT >></a>
 					</div>
 					<div class="content-bottom mt-auto">
 						<?php get_template_part('template-parts/blocks/block','social') ?>

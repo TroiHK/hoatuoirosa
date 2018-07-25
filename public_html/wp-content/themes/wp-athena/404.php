@@ -1,3 +1,5 @@
-<?php get_header(); ?>
-<?php get_footer(); ?>
-
+<?php
+	if ( wp_redirect( site_url() ) ) {
+	    exit;
+	}
+?>

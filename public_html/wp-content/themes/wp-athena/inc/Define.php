@@ -12,6 +12,7 @@ define('ROSA_TEL_TEXT','rosa_tel_text');
 define('ROSA_ADDRESS','rosa_address');
 define('ROSA_SOCIAL_ITEM','rosa_social_item');
 define('ROSA_FACEBOOK_PAGE','rosa_facebook_page');
+define('ROSA_COPYRIGHT','rosa_copyright');
 /**
  * Menu
 **/
