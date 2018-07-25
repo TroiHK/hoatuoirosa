@@ -5,13 +5,13 @@
 			<div class="col-md-2">
 				<ul class="list-img-product">
 					<li>
-						<img src="<?= ASSETS_PATH ?>/images/img9.jpg" alt="">
+						<img src="<?= ASSETS_PATH ?>/images/img9.jpg" class="w-100" alt="">
 					</li>
 					<li>
-						<img src="<?= ASSETS_PATH ?>/images/img9.jpg" alt="">
+						<img src="<?= ASSETS_PATH ?>/images/img9.jpg" class="w-100" alt="">
 					</li>
 					<li>
-						<img src="<?= ASSETS_PATH ?>/images/img9.jpg" alt="">
+						<img src="<?= ASSETS_PATH ?>/images/img9.jpg" class="w-100" alt="">
 					</li>
 				</ul>
 			</div>

@@ -60,10 +60,18 @@
 		right: -28px;
 		bottom: 0;
 		opacity: 0;
+		opacity: 0;
 		visibility: hidden;
 	}
 
 	.slick-active {
+		~ .slick-slide {
+			.bg {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+
 		.bg {
 			opacity: 1;
 			visibility: visible;

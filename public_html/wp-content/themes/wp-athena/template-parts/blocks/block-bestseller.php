@@ -9,7 +9,7 @@
 			<div class="col-12 col-sm-6 col-md-3">
 				<div class="item">
 					<div class="thumb">
-						<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/img5.jpg" alt="">
+						<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/img5.jpg" class="w-100" alt="">
 					</div>
 					<div class="content">
 						<p>Hoa sinh nhat</p>
@@ -23,7 +23,7 @@
 			<div class="col-12 col-sm-6 col-md-3">
 				<div class="item">
 					<div class="thumb">
-						<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/img6.jpg" alt="">
+						<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/img6.jpg" class="w-100" alt="">
 					</div>
 					<div class="content">
 						<p>Hoa sinh nhat</p>
@@ -37,7 +37,7 @@
 			<div class="col-12 col-sm-6 col-md-3">
 				<div class="item">
 					<div class="thumb">
-						<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/img7.jpg" alt="">
+						<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/img7.jpg" class="w-100" alt="">
 					</div>
 					<div class="content">
 						<p>Hoa sinh nhat</p>
@@ -51,7 +51,7 @@
 			<div class="col-12 col-sm-6 col-md-3">
 				<div class="item">
 					<div class="thumb">
-						<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/img8.jpg" alt="">
+						<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/img8.jpg" class="w-100" alt="">
 					</div>
 					<div class="content">
 						<p>Hoa sinh nhat</p>
@@ -65,7 +65,7 @@
 			<div class="col-12 col-sm-6 col-md-3">
 				<div class="item">
 					<div class="thumb">
-						<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/img5.jpg" alt="">
+						<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/img5.jpg" class="w-100" alt="">
 					</div>
 					<div class="content">
 						<p>Hoa sinh nhat</p>
