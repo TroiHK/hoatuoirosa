@@ -22,6 +22,9 @@
 		.comment-body {
 			&>p {
 				padding: 10px;
+				box-shadow: 0 0 5px 0 #ccc inset;
+    			margin-top: 10px;
+    			background: #fff;
 			}
 		}
 
@@ -36,5 +39,79 @@
 				}
 			}
 		}
+
+		a:not(:hover) {
+			color: #e98da6;
+		}
+
+		textarea, input[type="text"], input[type="email"] {
+		    background-clip: padding-box;
+		    background-color: #fff;
+		    border: 1px solid #ced4da;
+		    border-radius: .25rem;
+		    color: #495057;
+		    display: block;
+		    font-size: 1rem;
+		    line-height: 1.5;
+		    padding: .375rem .75rem;
+		    transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+		    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+		    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+		    width: 100%;
+		}
+
+		input[type="checkbox"] {
+			margin-right: 10px;
+		}
+
+		input[type="submit"] {
+		    background-color: #a46497!important;
+    		color: #fff!important;
+    		text-transform: capitalize!important;
+			font-weight: 400!important;
+
+			&:hover {
+				background-color: #935386!important;
+			}
+		}
+	}
+}
+
+/*.woocommerce-cart*/
+.woocommerce-cart table.cart td.actions .coupon .input-text {
+    padding: 9px 11px 7px;
+    margin: 0 10px 0 0;
+    width: 140px;
+    border-radius: 3px;
+}
+
+.woocommerce div.product form.cart .button {
+	line-height: 18px;
+}
+
+.page-content {
+	.wpcf7-form-control.wpcf7-submit {
+		background-color: #a46497;
+		color: #fff;
+    	padding: 10px 30px;
+    	border-radius: 3px;
+
+    	&:hover {
+    		background-color: #935386;
+    	}
+	}
+
+	.wpcf7-quiz{
+	    display: inline-block;
+    	width: 40px;
+    	margin-left: 10px;
+	}
+}
+
+.page-template-cart {
+	.main .product-detail {
+	    color: #f06eaa;
+	    border: 1px solid rgba(0,0,0,.1);
+	    border-radius: 5px;
 	}
 }

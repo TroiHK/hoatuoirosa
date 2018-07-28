@@ -32,7 +32,8 @@ function rosa_setup(){
     ) );
     add_theme_support( 'post-thumbnails' );
     add_post_type_support( 'page', 'excerpt' );
-    // add_image_size(FULL_SLIDE,1366,555,TRUE);
+    add_image_size(PRODUCT_THUMB,300,235,TRUE);
+    add_image_size(PRODUCT_THUMB_MEDIUM,300,360,TRUE);
 }
 
 /**
@@ -84,3 +85,23 @@ function rosa_login_logo_url_title() {
     return get_bloginfo( 'name' );
 }
 add_filter( 'login_headertitle', 'rosa_login_logo_url_title' );
+
+
+// my_rosa_archive_title
+function my_rosa_archive_title( $title ) {
+    if ( is_category() ) {
+        $title = single_cat_title( '', false );
+    } elseif ( is_tag() ) {
+        $title = single_tag_title( '', false );
+    } elseif ( is_author() ) {
+        $title = '<span class="vcard">' . get_the_author() . '</span>';
+    } elseif ( is_post_type_archive() ) {
+        $title = post_type_archive_title( '', false );
+    } elseif ( is_tax() ) {
+        $title = single_term_title( '', false );
+    }
+  
+    return $title;
+}
+ 
+add_filter( 'get_the_archive_title', 'my_rosa_archive_title' );

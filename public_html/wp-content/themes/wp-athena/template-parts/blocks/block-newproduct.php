@@ -1,41 +1,25 @@
+<?php	
+	$args = array(
+		'post_type' => 'product',
+		'orderby' => 'id',
+		'order' => 'DESC',
+		'visibility' => 'visible',
+		'post_per_page' => 20,
+	);
+	$query = new WP_Query( $args );
+	$totals = $query->found_posts;
+?>
+<?php if ( $query->have_posts() ) : ?>
 <section class="block-newproduct">
 	<div class="container">
-		<div class="row slider-product">
-			<div class="col-12 col-sm-6 col-md-3">
-				<div class="item">
-					<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/img1.jpg" class="w-100" alt="">
-					<p class="price">200.000</p>
-					<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/bg-flower.png" class="bg" class="w-100" alt="">
+		<div class="row<?= $totals > 4 ? ' slider-product' : '' ?>">
+			<?php while ( $query->have_posts() ) : $query->the_post(); ?>
+				<div class="col-12 col-sm-6 col-md-3">
+					<?php get_template_part( 'template-parts/product/item' ); ?>
 				</div>
-			</div>
-			<div class="col-12 col-sm-6 col-md-3">
-				<div class="item">
-					<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/img2.jpg" class="w-100" alt="">
-					<p class="price">200.000</p>
-					<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/bg-flower.png" class="bg" class="w-100" alt="">
-				</div>
-			</div>
-			<div class="col-12 col-sm-6 col-md-3">
-				<div class="item">
-					<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/img3.jpg" class="w-100" alt="">
-					<p class="price">200.000</p>
-					<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/bg-flower.png" class="bg" class="w-100" alt="">
-				</div>
-			</div>
-			<div class="col-12 col-sm-6 col-md-3">
-				<div class="item">
-					<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/img4.jpg" class="w-100" alt="">
-					<p class="price">200.000</p>
-					<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/bg-flower.png" class="bg" class="w-100" alt="">
-				</div>
-			</div>
-			<div class="col-12 col-sm-6 col-md-3">
-				<div class="item">
-					<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/img1.jpg" class="w-100" alt="">
-					<p class="price">200.000</p>
-					<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/bg-flower.png" class="bg" class="w-100" alt="">
-				</div>
-			</div>
+			<?php endwhile; ?>
 		</div>
 	</div>
 </section>
+<?php endif; ?>
+<?php wp_reset_query() ?>

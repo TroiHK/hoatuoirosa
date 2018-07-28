@@ -1,3 +1,22 @@
+<?php	
+	$current_term_id = get_queried_object()->term_id;
+	$args = array(
+		'post_type' => 'product',
+		'orderby' => 'id',
+		'order' => 'DESC',
+		'visibility' => 'visible',
+		'post_per_page' => -1,
+		'tax_query' => array(
+			array(
+				'taxonomy' => 'product_cat',
+				'field'    => 'term_id',
+				'terms'    => array( $current_term_id ),
+			),
+		),
+	);
+	$query = new WP_Query( $args );
+	$totals = $query->found_posts;
+?>
 <main id="main" class="main" style="background: url('<?= ASSETS_PATH ?>/images/bg-main-content.jpg')">
 	<?php get_template_part( 'template-parts/blocks/block', 'breadcrumb' ); ?>
 	
@@ -6,84 +25,29 @@
 			<div class="col-md-3">
 				<aside class="aside">
 					<?php get_template_part( 'template-parts/blocks/block', 'menu-theme' ); ?>
-
-					<?php get_template_part( 'template-parts/blocks/block', 'menu-filter'); ?>
+					<?php get_template_part( 'template-parts/blocks/block', 'menu-filter' ); ?>
 				</aside>
 			</div>
+
 			<div class="col-md-9">
-				<section class="block-newproduct block-list-product">
-					<div class="row slider-product">
-						<div class="col-12 col-sm-6 col-md-4">
-							<div class="item">
-								<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/img1.jpg" class="w-100" alt="">
-								<p class="price">200.000</p>
-								<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/bg-flower.png" class="bg" alt="">
-							</div>
-							<div class="item">
-								<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/img2.jpg" class="w-100" alt="">
-								<p class="price">200.000</p>
-								<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/bg-flower.png" class="bg" alt="">
-							</div>
-							<div class="item">
-								<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/img3.jpg" class="w-100" alt="">
-								<p class="price">200.000</p>
-								<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/bg-flower.png" class="bg" alt="">
-							</div>
+				<?php if ( $query->have_posts() ) : $index = 1; ?>
+					<section class="block-newproduct block-list-product">
+						<div class="row<?= $totals > 9 ? ' slider-product' : '' ?>">
+							<?php while ( $query->have_posts() ) : $query->the_post(); ?>
+								<?= ( $index - 1 ) % 3 == 0 ? '<div class="col-12 col-sm-6 col-md-4">' : '' ?>
+									<?php get_template_part( 'template-parts/product/item' ); ?>
+								<?= ( $index % 3 == 0 ) || ( $index % 3 != 0 && $index == $totals ) ? '</div>' : '' ?>
+								<?php $index++; ?>
+							<?php endwhile; ?>
 						</div>
-						<div class="col-12 col-sm-6 col-md-4">
-							<div class="item">
-								<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/img2.jpg" class="w-100" alt="">
-								<p class="price">200.000</p>
-								<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/bg-flower.png" class="bg" alt="">
-							</div>
-							<div class="item">
-								<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/img4.jpg" class="w-100" alt="">
-								<p class="price">200.000</p>
-								<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/bg-flower.png" class="bg" alt="">
-							</div>
-							<div class="item">
-								<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/img4.jpg" class="w-100" alt="">
-								<p class="price">200.000</p>
-								<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/bg-flower.png" class="bg" alt="">
-							</div>
-						</div>
-						<div class="col-12 col-sm-6 col-md-4">
-							<div class="item">
-								<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/img1.jpg" class="w-100" alt="">
-								<p class="price">200.000</p>
-								<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/bg-flower.png" class="bg" alt="">
-							</div>
-							<div class="item">
-								<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/img2.jpg" class="w-100" alt="">
-								<p class="price">200.000</p>
-								<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/bg-flower.png" class="bg" alt="">
-							</div>
-							<div class="item">
-								<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/img3.jpg" class="w-100" alt="">
-								<p class="price">200.000</p>
-								<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/bg-flower.png" class="bg" alt="">
-							</div>
-						</div>
-						<div class="col-12 col-sm-6 col-md-4">
-							<div class="item">
-								<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/img2.jpg" class="w-100" alt="">
-								<p class="price">200.000</p>
-								<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/bg-flower.png" class="bg" alt="">
-							</div>
-							<div class="item">
-								<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/img4.jpg" class="w-100" alt="">
-								<p class="price">200.000</p>
-								<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/bg-flower.png" class="bg" alt="">
-							</div>
-							<div class="item">
-								<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/img4.jpg" class="w-100" alt="">
-								<p class="price">200.000</p>
-								<img src="<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/bg-flower.png" class="bg" alt="">
-							</div>
-						</div>
-					</div>
-				</section>
+					</section>
+				<?php else : ?>
+					<section class="page-content p-3 product-detail">
+						<h3><?= __('Xin lỗi không có sản phẩm cho chủ đề này!', DOMAIN) ?></h3>
+					</section>
+				<?php endif; ?>
 			</div>
 		</div>
 	</div>
 </main>
+<?php wp_reset_query() ?>

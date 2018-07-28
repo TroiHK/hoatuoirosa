@@ -8,7 +8,7 @@
 						<p><?php the_excerpt(); ?></p>
 					</div>
 					<div class="content-bottom mt-auto">
-						<?php get_template_part('template-parts/blocks/block','social') ?>
+						<?php get_template_part( 'template-parts/blocks/block', 'social' ); ?>
 					</div>
 				</div>
 			</div>

@@ -13,6 +13,7 @@ define('ROSA_ADDRESS','rosa_address');
 define('ROSA_SOCIAL_ITEM','rosa_social_item');
 define('ROSA_FACEBOOK_PAGE','rosa_facebook_page');
 define('ROSA_COPYRIGHT','rosa_copyright');
+define('ROSA_FILTER_ITEM','rosa_filter_item');
 /**
  * Menu
 **/
@@ -20,6 +21,8 @@ define('ROSA_MAIN_MENU','rosa_logo');
 /**
  * Image Size
 **/
+define('PRODUCT_THUMB','product_thumb');
+define('PRODUCT_THUMB_MEDIUM','product_thumb_medium');
 /**
  * Home Page
 **/

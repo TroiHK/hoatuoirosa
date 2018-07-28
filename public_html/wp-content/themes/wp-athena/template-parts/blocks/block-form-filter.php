@@ -1,33 +1,44 @@
+<?php 
+	$chuDe = isset($_GET['chu-de']) ? $_GET['chu-de'] : '';
+	$mucGia = isset($_GET['muc-gia']) ? $_GET['muc-gia'] : '';
+
+	$product_cats = get_terms( array(
+	    'taxonomy' => 'product_cat',
+	    'exclude' => array(28),
+	    'hide_empty' => false,
+	) );
+?>
 <div class="block-filter">
-	<form action="<?php echo esc_url( home_url( '/' ) . 'tim-kiem-nang-cao/' ); ?>" class="d-flex align-items-center">
+	<form action="<?= esc_url( home_url( '/' ) . 'tim-kiem-nang-cao/' ); ?>" class="d-flex align-items-center">
 		<div class="form-group">
 			<label><?= __('Chọn chủ đề', DOMAIN) ?></label>
-			<select>
-				<option selected>Tất cả</option>
-				<option value="Dưới 250.000đ">Dưới 250.000đ</option>
-				<option value="Giá từ 250.000đ - 350.000đ">Giá từ 250.000đ - 350.000đ</option>
-				<option value="Giá từ 350.000đ - 400.000đ">Giá từ 350.000đ - 400.000đ</option>
-				<option value="Giá từ 500.000đ - 600.000đ">Giá từ 500.000đ - 600.000đ</option>
-				<option value="Giá từ 600.000đ - 800.000đ">Giá từ 600.000đ - 800.000đ</option>
-				<option value="Giá từ 800.000đ - 1.000.000đ">Giá từ 800.000đ - 1.000.000đ</option>
-				<option value="Giá trên 1.000.000đ">Giá trên 1.000.000đ</option>
+			<select name="chu-de">
+				<option value="all"<?= $chuDe == 'all' || !$chuDe ? ' selected' : '';?>><?= __('Tất cả', DOMAIN) ?></option>
+
+				<?php foreach ($product_cats as $value) { ?>
+					<option value="<?= $value->term_id ?>"<?= $chuDe == $value->term_id ? ' selected' : '' ?>><?= $value->name ?></option>
+				<?php } ?>
 			</select>
 		</div>
+
+		<?php if ( have_rows(ROSA_FILTER_ITEM, 'option') ) : ?>
 		<div class="form-group">
 			<label><?= __('Chọn mức giá', DOMAIN) ?></label>
-			<select>
-				<option selected>Tất cả</option>
-				<option value="Dưới 250.000đ">Dưới 250.000đ</option>
-				<option value="Giá từ 250.000đ - 350.000đ">Giá từ 250.000đ - 350.000đ</option>
-				<option value="Giá từ 350.000đ - 400.000đ">Giá từ 350.000đ - 400.000đ</option>
-				<option value="Giá từ 500.000đ - 600.000đ">Giá từ 500.000đ - 600.000đ</option>
-				<option value="Giá từ 600.000đ - 800.000đ">Giá từ 600.000đ - 800.000đ</option>
-				<option value="Giá từ 800.000đ - 1.000.000đ">Giá từ 800.000đ - 1.000.000đ</option>
-				<option value="Giá trên 1.000.000đ">Giá trên 1.000.000đ</option>
+			<select name="muc-gia">
+				<option value="all"<?= $mucGia == 'all' || !$mucGia ? ' selected' : '' ?>><?= __('Tất cả', DOMAIN) ?></option>
+
+				<?php 
+					while ( have_rows(ROSA_FILTER_ITEM, 'option') ) : 
+						the_row(); 
+						$value = get_sub_field('value');
+				?>
+					<option value="<?= $value ?>"<?= $mucGia == $value ? ' selected' : '' ?>><?= get_sub_field('text') ?></option>
+				<?php endwhile; ?>
 			</select>
 		</div>
+		<?php endif; ?>
 		<div class="form-group ml-auto">
-			<input type="submit" value="Tìm kiếm">
+			<input type="submit" value="<?= __('Tìm kiếm', DOMAIN) ?>">
 		</div>
 	</form>
 </div>
