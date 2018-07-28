@@ -20,4 +20,9 @@ define('ROSA_MAIN_MENU','rosa_logo');
 /**
  * Image Size
 **/
-
+/**
+ * Home Page
+**/
+define('ROSA_HP_TOP_CONTENT','rosa_hp_top_content');
+define('ROSA_HP_SLIDER_ITEMS','rosa_hp_slider_items');
+define('ROSA_HP_CONTENT','rosa_hp_content');

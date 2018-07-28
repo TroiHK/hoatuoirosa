@@ -6,3 +6,4 @@ define('APP_PATH',dirname(__FILE__));
 include APP_PATH.'/inc/Define.php';
 include APP_PATH.'/inc/MainMenuWalker.php';
 include APP_PATH.'/inc/Setup.php';
+include APP_PATH.'/inc/Woocommerce.php';

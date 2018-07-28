@@ -1,7 +1,7 @@
 <section class="block-slider block-slider--inter">
 	<div class="thumb" style="background-image: url('<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/bg-banner.jpg')">
 		<div class="container d-flex h-100">
-			<div class="row">
+			<div class="row w-100">
 				<div class="content col-md-6 d-flex flex-column">
 					<div class="content-top">
 						<h1 class="title">DỊCH VỤ HOA SINH NHẬT</h1>

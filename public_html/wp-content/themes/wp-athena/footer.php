@@ -15,11 +15,11 @@
 					<?php get_template_part('template-parts/footer/footer','info') ?>
 				</div>
 
-				<div class="col-md-3 ft-menu">
+				<div class="col-md-2 ft-menu">
 					<?php get_template_part('template-parts/footer/footer','access') ?>
 				</div>
 
-				<div class="col-md-2 ft-menu">
+				<div class="col-md-3 ft-menu">
 					<?php get_template_part('template-parts/blocks/block','facebook-code') ?>
 				</div>
 			</div>

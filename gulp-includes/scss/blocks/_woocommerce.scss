@@ -1,0 +1,40 @@
+// woocommerce-Tabs-panel woocommerce-Tabs-panel--description panel entry-content wc-tab
+.woocommerce-Tabs-panel {
+	&.woocommerce-Tabs-panel--description.entry-content {
+		ol {
+			list-style-type: decimal;
+			padding-left: 20px;
+
+			li + li {
+				margin-top: 10px;
+			}
+		}
+	}
+
+	&.woocommerce-Tabs-panel--reviews.entry-content {
+		.vcard {
+			img {
+				float: left;
+				margin-right: 15px;
+			}
+		}
+
+		.comment-body {
+			&>p {
+				padding: 10px;
+			}
+		}
+
+		.commentlist {
+			&>li {
+				background-color: rgba(#ccc, 0.5);
+				padding: 15px;
+				border-radius: 5px;
+
+				+li {
+					margin-top: 15px;
+				}
+			}
+		}
+	}
+}
