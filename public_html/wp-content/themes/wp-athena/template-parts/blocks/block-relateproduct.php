@@ -30,4 +30,6 @@
 		</div>
 	</div>
 </section>
+<?php else : ?>
+	<?php get_template_part( 'template-parts/blocks/block', 'contact'); ?>
 <?php endif; ?>
