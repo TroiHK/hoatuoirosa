@@ -3,7 +3,7 @@
 		'post_type' => 'product',
 		'orderby' => 'id',
 		'order' => 'DESC',
-		'visibility' => 'visible',
+		'post_status' => 'publish',
 		'post_per_page' => 20,
 	);
 	$query = new WP_Query( $args );

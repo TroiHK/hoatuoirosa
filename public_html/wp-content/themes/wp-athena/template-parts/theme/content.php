@@ -4,7 +4,7 @@
 		'post_type' => 'product',
 		'orderby' => 'id',
 		'order' => 'DESC',
-		'visibility' => 'visible',
+		'post_status' => 'publish',
 		'post_per_page' => -1,
 		'tax_query' => array(
 			array(
@@ -16,6 +16,7 @@
 	);
 	$query = new WP_Query( $args );
 	$totals = $query->found_posts;
+	$hasSlider = $totals > 9;
 ?>
 <main id="main" class="main" style="background: url('<?= ASSETS_PATH ?>/images/bg-main-content.jpg')">
 	<?php get_template_part( 'template-parts/blocks/block', 'breadcrumb' ); ?>
@@ -30,15 +31,23 @@
 			</div>
 
 			<div class="col-md-9">
-				<?php if ( $query->have_posts() ) : $index = 1; ?>
+				<?php if ( $query->have_posts() ) : ?>
 					<section class="block-newproduct block-list-product">
-						<div class="row<?= $totals > 9 ? ' slider-product' : '' ?>">
-							<?php while ( $query->have_posts() ) : $query->the_post(); ?>
-								<?= ( $index - 1 ) % 3 == 0 ? '<div class="col-12 col-sm-6 col-md-4">' : '' ?>
-									<?php get_template_part( 'template-parts/product/item' ); ?>
-								<?= ( $index % 3 == 0 ) || ( $index % 3 != 0 && $index == $totals ) ? '</div>' : '' ?>
-								<?php $index++; ?>
-							<?php endwhile; ?>
+						<div class="row<?= $hasSlider ? ' slider-product' : '' ?>">
+							<?php if ( $hasSlider ) : $index = 1; ?>
+								<?php while ( $query->have_posts() ) : $query->the_post(); ?>
+									<?= ( $index - 1 ) % 3 == 0 ? '<div class="col-12 col-sm-6 col-md-4">' : '' ?>
+										<?php get_template_part( 'template-parts/product/item' ); ?>
+									<?= ( $index % 3 == 0 ) || ( $index % 3 != 0 && $index == $totals ) ? '</div>' : '' ?>
+									<?php $index++; ?>
+								<?php endwhile; ?>
+							<?php else : ?>
+								<?php while ( $query->have_posts() ) : $query->the_post(); ?>
+									<div class="col-12 col-sm-6 col-md-4">
+										<?php get_template_part( 'template-parts/product/item' ); ?>
+									</div>
+								<?php endwhile; ?>
+							<?php endif; ?>
 						</div>
 					</section>
 				<?php else : ?>

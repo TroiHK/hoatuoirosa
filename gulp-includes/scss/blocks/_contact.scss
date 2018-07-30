@@ -4,13 +4,18 @@
 	background-position: left bottom;
 
 	.map {
+		position: relative;
+	    z-index: 10;
+    	padding-right: 9px;
+
 		.overlay {
-			position: absolute;
-			width: calc(100% + 9px);
-			height: 100%;
-			background: url("../images/map-overlay.png") top right/ auto 100% no-repeat;
-			top: 0;
-			left: -22px;
+			background: url(../images/map-overlay.png) center/100% 100% no-repeat;
+		    left: -45px;
+		    right: 0;
+		    position: absolute;
+		    top: -8px;
+		    bottom: -9px;
+		    z-index: -1;
 		}
 	}
 
@@ -35,10 +40,17 @@
 			@include placeholder {
 				color: $pink-bolder;
 			}
+
+			&.wpcf7-quiz {
+				display: inline-block;
+				width: 50px;
+				margin-left: 10px;
+			}
 		}
 
 		textarea {
 			margin-bottom: 30px;
+			height: 75px;
 		}
 
 		.btn-primary {
@@ -51,4 +63,22 @@
 			border: none;
 		}
 	}
+}
+
+input:focus, input:active, textarea:focus, textarea:active {
+	outline: none!important;
+	box-shadow: none!important;
+}
+
+.mapouter{
+	text-align:right;
+	height:397px;
+	width:100%;
+}
+
+.gmap_canvas {
+	overflow:hidden;
+	background:none!important;
+	height:397px;
+	width:100%;
 }

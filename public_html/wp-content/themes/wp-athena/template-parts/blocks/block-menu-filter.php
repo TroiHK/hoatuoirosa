@@ -9,7 +9,7 @@
 					$value = get_sub_field('value');
 			?>
 				<li>
-					<a style="color: inherit;" href="<?= esc_url( home_url( '/' ) . 'tim-kiem-nang-cao/?muc-gia=' . $value ); ?>">
+					<a style="color: inherit;" href="<?= esc_url( home_url( '/' ) . 'tim-kiem-nang-cao/?muc-gia=' ); ?><?= $value ?>">
 						<?= get_sub_field('text') ?>
 					</a>
 				</li>
