@@ -5,7 +5,9 @@
 				<div class="content col-md-6 d-flex flex-column">
 					<div class="content-top">
 						<h1 class="title"><?php the_title(); ?></h1>
-						<p><?php the_excerpt(); ?></p>
+						<?php if ( !is_singular('product') && has_excerpt() ) : ?>
+							<p><?php the_excerpt(); ?></p>
+						<?php endif; ?>
 					</div>
 					<div class="content-bottom mt-auto">
 						<?php get_template_part( 'template-parts/blocks/block', 'social' ); ?>

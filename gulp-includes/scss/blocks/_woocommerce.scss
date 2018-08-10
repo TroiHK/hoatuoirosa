@@ -79,7 +79,7 @@
 
 /*.woocommerce-cart*/
 .woocommerce-cart table.cart td.actions .coupon .input-text {
-    padding: 9px 11px 7px;
+    // padding: 9px 11px 7px;
     margin: 0 10px 0 0;
     width: 140px;
     border-radius: 3px;
@@ -113,6 +113,14 @@
 	    color: #f06eaa;
 	    border: 1px solid rgba(0,0,0,.1);
 	    border-radius: 5px;
+	}
+
+	.form-row {
+		display: block;
+	}
+
+	#billing_country_field, shipping_country_field {
+		display: none;
 	}
 }
 
