@@ -1,79 +1,106 @@
-.navbar-nav {
-	@include media-breakpoint-up(lg) {
-		margin-top: 40px;
-	}
+.navbar {
+	.navbar-brand {
+		width: 100%;
 
-	> .nav-item {
-		> a {
-			font-family: $main-font;
+		@include media-breakpoint-up(md) {
+			width: auto;
 		}
 	}
 
-	.nav-item {
-		position: relative;
-
-		+ .nav-item {
-			margin-left: 20px;
+	.navbar-nav {
+		@include media-breakpoint-up(lg) {
+			margin-top: 40px;
 		}
 
-		&.menu-item-has-children {
+		> .nav-item {
+			> a {
+				font-family: $main-font;
+			}
+		}
 
-			@include media-breakpoint-up(lg) {
-				&:hover {
+		.nav-item {
+			position: relative;
+
+			+ .nav-item {
+				margin-left: 20px;
+			}
+
+			&.menu-item-has-children {
+
+				@include media-breakpoint-up(lg) {
+					&:hover {
+						.dropdown-menu {
+							display: block;
+						}
+					}
+
 					.dropdown-menu {
-						display: block;
+						width: 230px;
+						background-color: rgba(#feeaef, 0.84);
+
+						&:before {
+							position: absolute;
+							left: 10px;
+							content: "";
+							width: 0;
+							height: 0;
+							top: -10px;
+							border-left: 11px solid transparent;
+							border-right: 11px solid transparent;
+							border-bottom: 10px solid #feedf2;
+						}
 					}
 				}
 
-				.dropdown-menu {
-					width: 230px;
-					background-color: rgba(#feeaef, 0.84);
-
-					&:before {
-						position: absolute;
-						left: 10px;
-						content: "";
-						width: 0;
-						height: 0;
-						top: -10px;
-						border-left: 11px solid transparent;
-						border-right: 11px solid transparent;
-						border-bottom: 10px solid #feedf2;
-					}
-				}
 			}
-
 		}
-	}
 
-	.nav-link {
-		font-size: 30px;
-		color: $pink;
-	}
+		.nav-link {
+			font-size: 30px;
+			color: $pink;
+		}
 
-	.dropdown-menu {
-		padding: 0;
-		border: none;
-
-		ul {
+		.dropdown-menu {
 			padding: 0;
-		}
+			border: none;
 
-		li {
-			a {
-				color: #f1577a;
-				display: block;
-				padding: 10px 12px;
+			ul {
+				padding: 0;
+			}
 
-				&:hover {
-					color: #66799d;
+			li {
+				a {
+					color: #f1577a;
+					display: block;
+					padding: 10px 12px;
+
+					&:hover {
+						color: #66799d;
+					}
+				}
+
+				+ li {
+					border-top: 1px dashed #e98ea7;
 				}
 			}
+		}
 
-			+ li {
-				border-top: 1px dashed #e98ea7;
-			}
+		.dropdown-toggle {
+			position: absolute;
+			right: 0;
+			top: 15px;
+			color: #f1577a;
 		}
 	}
 
+	.navbar-collapse {
+		border-top: 1px solid #e98ea7;
+		margin-top: 25px;
+
+		@include media-breakpoint-up(md) {
+			border-top: 0;
+			margin-top: 0;
+		}
+	}
 }
+

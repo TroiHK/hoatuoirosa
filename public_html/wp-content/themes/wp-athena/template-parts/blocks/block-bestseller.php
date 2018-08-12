@@ -19,7 +19,7 @@
 
 		<div class="row<?= $totals > 4 ? ' slider-product' : '' ?>">
 			<?php while ( $query->have_posts() ) : $query->the_post(); ?>
-				<div class="col-12 col-sm-6 col-md-3">
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3">
 					<?php get_template_part( 'template-parts/product/item', 'bestseller' ); ?>
 				</div>
 			<?php endwhile; ?>

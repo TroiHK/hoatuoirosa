@@ -9,10 +9,10 @@
 	) );
 ?>
 <div class="block-filter">
-	<form action="<?= esc_url( home_url( '/' ) . 'tim-kiem-nang-cao/' ); ?>" class="d-flex align-items-center">
-		<div class="form-group">
+	<form action="<?= esc_url( home_url( '/' ) . 'tim-kiem-nang-cao/' ); ?>" class="d-md-flex align-items-center">
+		<div class="form-group d-flex align-items-center">
 			<label><?= __('Chọn chủ đề', DOMAIN) ?></label>
-			<select name="chu-de">
+			<select name="chu-de" class="ml-auto">
 				<option value="all"<?= $chuDe == 'all' || !$chuDe ? ' selected' : '';?>><?= __('Tất cả', DOMAIN) ?></option>
 
 				<?php foreach ($product_cats as $value) { ?>
@@ -22,9 +22,9 @@
 		</div>
 
 		<?php if ( have_rows(ROSA_FILTER_ITEM, 'option') ) : ?>
-		<div class="form-group">
+		<div class="form-group d-flex align-items-center">
 			<label><?= __('Chọn mức giá', DOMAIN) ?></label>
-			<select name="muc-gia">
+			<select name="muc-gia" class="ml-auto">
 				<option value="all"<?= $mucGia == 'all' || !$mucGia ? ' selected' : '' ?>><?= __('Tất cả', DOMAIN) ?></option>
 
 				<?php 

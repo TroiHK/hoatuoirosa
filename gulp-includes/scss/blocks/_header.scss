@@ -4,14 +4,19 @@
 	}
 
 	.hotline {
-		position: absolute;
-		right: 0;
-		top: 50%;
-		transform: translateY(-50%);
 		color: $red;
-		width: 250px;
 		text-align: center;
 		font-family: $quote-font;
+		margin: 0 auto;
+		width: 250px;
+		position: relative;
+
+		@include media-breakpoint-up(lg) {
+			position: absolute;
+			right: 0;
+			top: 15px;
+			margin-right: 0;
+		}
 
 		label {
 			display: block;
@@ -43,6 +48,22 @@
 			right: 0;
 			top: 0;
 			width: 65px;
+		}
+	}
+
+	.navbar-toggler {
+		position: absolute;
+		right: 0;
+		top: 32px;
+		padding: 0;
+
+		&-icon {
+			span {
+				@include size(30px, 3px);
+				background-color: $pink;
+				display: block;
+				margin: 5px auto;
+			}
 		}
 	}
 }

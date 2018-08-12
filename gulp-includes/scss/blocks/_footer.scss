@@ -1,5 +1,5 @@
 .footer {
-	background: url("../images/bg-ft.jpg") left center/cover no-repeat;
+	background: url("../images/bg-ft.jpg") top center/cover no-repeat;
 	padding: 15px 0 30px;
 
 	&-menu {
@@ -9,7 +9,11 @@
 			display: inline-block;
 
 			+ li {
-				margin-left: 84px;
+				margin-left: 20px;
+
+				@include media-breakpoint-up(lg) {
+					margin-left: 84px;
+				}
 			}
 
 			&.current-menu-item {
@@ -20,7 +24,11 @@
 
 			a {
 				color: $pink;
-				font-size: 30px;
+				font-size: 22px;
+
+				@include media-breakpoint-up(lg) {
+					font-size: 30px;
+				}
 			}
 		}
 	}

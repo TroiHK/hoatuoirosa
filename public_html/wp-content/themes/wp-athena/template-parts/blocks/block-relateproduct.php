@@ -14,14 +14,14 @@
 		<div class="row<?= $hasSlider ? ' slider-product' : '' ?>">
 			<?php if ( $hasSlider ) : $index = 1; ?>
 				<?php foreach ($arrayReplate as $value) : $post = get_post($value); setup_postdata($post); ?>
-					<?= ( $index - 1 ) % 2 == 0 ? '<div class="col-12 col-sm-6 col-md-3">' : '' ?>
+					<?= ( $index - 1 ) % 2 == 0 ? '<div class="col-12 col-sm-6 col-md-4 col-lg-3">' : '' ?>
 						<?php get_template_part( 'template-parts/product/item' ); ?>
 					<?= ( $index % 2 == 0 ) || ( $index % 2 != 0 && $index == $totals ) ? '</div>' : '' ?>
 					<?php $index++; ?>
 				<?php endforeach; ?>
 			<?php else : ?>
 				<?php foreach ($arrayReplate as $value) : $post = get_post($value); setup_postdata($post); ?>
-					<div class="col-12 col-sm-6 col-md-3">
+					<div class="col-12 col-sm-6 col-md-4 col-lg-3">
 						<?php get_template_part( 'template-parts/product/item' ); ?>
 					</div>
 				<?php endforeach; ?>

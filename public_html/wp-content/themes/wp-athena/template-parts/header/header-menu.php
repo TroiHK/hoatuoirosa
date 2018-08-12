@@ -12,6 +12,8 @@
 				<span></span>
 			</span>
 		</button>
+		<?php get_template_part('template-parts/header/header','hotline') ?>
+
 		<?php
 		    wp_nav_menu([
 		        'theme_location'    => 'primary_menu',
@@ -22,7 +24,5 @@
 		        'walker'            => new MainMenuWalker()
 		    ]);
 		?>
-
-		<?php get_template_part('template-parts/header/header','hotline') ?>
 	</div>
 </nav>

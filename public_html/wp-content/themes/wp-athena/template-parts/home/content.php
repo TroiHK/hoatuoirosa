@@ -1,7 +1,7 @@
 <section class="block block-content" style="background: url('<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/bg-content.jpg')">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-10 offset-md-1">
+			<div class="col-lg-10 offset-lg-1">
 				<?php get_template_part('template-parts/blocks/block','form-filter') ?>
 			</div>
 		</div>

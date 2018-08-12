@@ -12,7 +12,7 @@
 			<div class="col-md-4">
 				<div class="map">
 					<div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="397" id="gmap_canvas" src="https://maps.google.com/maps?q=116%20%C4%90i%E1%BB%87n%20Bi%C3%AAn%20Ph%E1%BB%A7%2C%20V%C4%A9nh%20H%C3%B2a%2C%20Nha%20Trang&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.pureblack.de/google-maps/"></a></div></div>
-					<div class="overlay"></div>
+					<img src="<?= ASSETS_PATH ?>images/bg-flower-pink.png" class="bg" alt="">
 				</div>
 			</div>
 		</div>

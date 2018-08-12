@@ -1,6 +1,6 @@
 <section class="block-slider">
 	<div class="thumb" style="background-image: url('<?= site_url() ?>/wp-content/themes/wp-athena/assets/images/bg-banner.jpg')">
-		<div class="container d-flex h-100">
+		<div class="container d-none d-md-flex h-100">
 			<div class="row">
 				<div class="content col-md-6 d-flex flex-column">
 					<?php if ( have_rows(ROSA_HP_TOP_CONTENT) ) : ?>
@@ -22,7 +22,7 @@
 		</div>
 
 		<?php if ( have_rows(ROSA_HP_SLIDER_ITEMS) ) : ?>
-		<div class="slider-default w-50">
+		<div class="slider-default">
 			<?php while ( have_rows(ROSA_HP_SLIDER_ITEMS) ) : the_row(); ?>
 				<div class="item">
 					<img src="<?= get_sub_field('image') ?>" alt="<?= get_bloginfo('name') ?> slider-<?= get_row_index() ?>">

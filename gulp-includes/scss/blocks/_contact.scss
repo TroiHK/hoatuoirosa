@@ -6,7 +6,8 @@
 	.map {
 		position: relative;
 	    z-index: 10;
-    	padding-right: 9px;
+		border: 7px solid $pink;
+		border-radius: 7px;
 
 		.overlay {
 			background: url(../images/map-overlay.png) center/100% 100% no-repeat;
@@ -16,6 +17,12 @@
 		    top: -8px;
 		    bottom: -9px;
 		    z-index: -1;
+		}
+
+		.bg {
+			position: absolute;
+			left: -35px;
+			bottom: 0;
 		}
 	}
 

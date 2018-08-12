@@ -120,14 +120,14 @@
 		<div class="row<?= $hasSlider ? ' slider-product' : '' ?>">
 			<?php if ( $hasSlider ) : $index = 1; ?>
 				<?php while ( $query->have_posts() ) : $query->the_post(); ?>
-					<?= ( $index - 1 ) % 4 == 0 ? '<div class="col-12 col-sm-6 col-md-3">' : '' ?>
+					<?= ( $index - 1 ) % 4 == 0 ? '<div class="col-12 col-sm-6 col-md-4 col-lg-3">' : '' ?>
 						<?php get_template_part( 'template-parts/product/item', 'bestseller' ); ?>
 					<?= ( $index % 4 == 0 ) || ( $index % 4 != 0 && $index == $totals ) ? '</div>' : '' ?>
 					<?php $index++; ?>
 				<?php endwhile; ?>
 			<?php else : ?>
 				<?php while ( $query->have_posts() ) : $query->the_post(); ?>
-					<div class="col-12 col-sm-6 col-md-3">
+					<div class="col-12 col-sm-6 col-md-4 col-lg-3">
 						<?php get_template_part( 'template-parts/product/item', 'bestseller' ); ?>
 					</div>
 				<?php endwhile; ?>
