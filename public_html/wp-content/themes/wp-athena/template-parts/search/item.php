@@ -1,7 +1,10 @@
+<?php 
+	$postThumbnail = get_the_post_thumbnail_url($post->ID, PRODUCT_THUMB_MEDIUM);
+?>
 <div class="item">
 	<a href="<?= get_the_permalink() ?>" style="color: inherit;">
 		<div class="thumb">
-			<img src="<?= get_the_post_thumbnail_url($post->ID, PRODUCT_THUMB_MEDIUM) ?>" class="w-100" alt="<?= get_the_title() ?>">
+			<img src="<?= $postThumbnail ? $postThumbnail : ASSETS_PATH . 'images/img6.jpg' ?>" class="w-100" alt="<?= get_the_title() ?>">
 		</div>
 		<div class="content">
 			<p><?= get_the_title() ?></p>
